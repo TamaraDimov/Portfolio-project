@@ -4,6 +4,11 @@
   padding-left: 1%;
 }
 
+body {
+  width: 375px;
+  height: 718px;
+}
+
 .menu_line {
   width: 35px;
   height: 5px;
@@ -16,6 +21,7 @@
   font-style: italic;
   font-weight: 700;
   font-size: 20px;
+  text-decoration: none;
 }
 
 .introName {
@@ -30,8 +36,8 @@
 }
 
 .intro {
-  width: 90%;
-  height: 146px;
+  width: 327px;
+  height: 150px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -69,4 +75,10 @@
   width: 462px;
   left: -34px;
   top: 103.9993896484375px;
+}
+
+.toggleNav {
+  width: 18px;
+  height: 12px;
+  align-self: center;
 }
