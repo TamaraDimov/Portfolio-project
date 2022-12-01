@@ -80,7 +80,7 @@ To get a local copy up and running, follow these steps.
 
 ### Setup
 
-Clone this repository to your desired folder: https://github.com/TamaraDimov/Hello-world.git
+Clone this repository to your desired folder: https://github.com/TamaraDimov/Portfolio-project
 
 <!--
 Example commands:
