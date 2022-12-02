@@ -9,13 +9,6 @@ body {
   height: 718px;
 }
 
-.menu_line {
-  width: 35px;
-  height: 5px;
-  background-color: #6070ff;
-  margin: 6px 0;
-}
-
 .logo {
   color: #6070ff;
   font-style: italic;
@@ -53,7 +46,7 @@ body {
 }
 
 .topHeader {
-  width: 375px;
+  width: 327px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,8 +64,8 @@ body {
 .backgroundImg {
   background-image: url(img/header-shapes\ mobile.png);
   background-repeat: no-repeat;
-  height: 587.1460571289062px;
-  width: 462px;
+  height: 718px;
+  width: 375px;
   left: -34px;
   top: 103.9993896484375px;
 }
