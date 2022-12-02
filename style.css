@@ -1,12 +1,12 @@
-/* @media all and (max-width: 500px) { */
+/* @media all and (max-width: 768px) { */
 * {
   font-family: sans-serif;
   padding-left: 1%;
 }
 
 body {
-  width: 375px;
-  height: 718px;
+  width: 100vw;
+  height: auto;
 }
 
 .logo {
@@ -19,7 +19,7 @@ body {
 
 .introName {
   margin-top: 3rem;
-  height: 146px;
+  height: auto;
   width: 80%;
   font-weight: 700;
   font-size: 40px;
@@ -29,8 +29,8 @@ body {
 }
 
 .intro {
-  width: 327px;
-  height: 150px;
+  width: 95vw;
+  height: auto;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -46,7 +46,8 @@ body {
 }
 
 .topHeader {
-  width: 327px;
+  width: 95vw;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,8 +65,7 @@ body {
 .backgroundImg {
   background-image: url(img/header-shapes\ mobile.png);
   background-repeat: no-repeat;
-  height: 718px;
-  width: 375px;
+  background-size: 100%;
   left: -34px;
   top: 103.9993896484375px;
 }
