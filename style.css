@@ -1,0 +1,83 @@
+/* @media all and (max-width: 768px) { */
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 1%;
+}
+
+body {
+  width: 100vw;
+  height: auto;
+}
+
+.logo {
+  color: #6070ff;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.introName {
+  margin-top: 3rem;
+  height: auto;
+  width: 80%;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  text-align: left;
+}
+
+.intro {
+  width: 95vw;
+  height: auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  padding-right: 30px;
+  text-align: left;
+}
+
+.connect {
+  color: #7f8cff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.topHeader {
+  width: 95vw;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.media_links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  list-style: none;
+  margin-top: -1rem;
+  font-size: 24px;
+}
+
+.fa {
+  color: #505f79;
+}
+
+.backgroundImg {
+  background-image: url(img/header-shapes\ mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  left: -34px;
+  top: 103.9993896484375px;
+}
+
+.toggleNav {
+  width: 18px;
+  height: 12px;
+  align-self: center;
+}
