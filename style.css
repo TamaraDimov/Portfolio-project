@@ -93,6 +93,13 @@ body {
 }
 
 /* Portfolio "Works" section */
+
+.works {
+  display: grid;
+  grid-template-rows: 4, 1fr;
+  row-gap: 5rem;
+}
+
 .portfolio2 {
   box-sizing: border-box;
   width: 100%;
@@ -103,22 +110,72 @@ body {
   justify-self: center;
 }
 
-.mainContainer {
+.mainContainer1 {
   width: 100vw;
   height: auto;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  display: grid;
+  display: flex;
   justify-content: center;
   align-content: center;
-  margin-bottom: 5rem;
   padding: 0;
+  background-image: url(img/Snapshoot\ Portfolio.png);
+  background-repeat: no-repeat;
+  background-size: 80% 40%;
+  background-position-x: center;
+  background-position-y: 15px;
 }
 
-.snapshoot {
-  justify-self: center;
-  margin-top: 2%;
-  margin-bottom: 10%;
+.mainContainer2 {
+  width: 100vw;
+  height: auto;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 0;
+  background-image: url(img/Snapshoot\ Portfolio2.png);
+  background-repeat: no-repeat;
+  background-size: 80% 40%;
+  background-position-x: center;
+  background-position-y: 15px;
+}
+
+.mainContainer3 {
+  width: 100vw;
+  height: auto;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 0;
+  background-image: url(img/Snapshoot\ Portfolio3.png);
+  background-repeat: no-repeat;
+  background-size: 80% 40%;
+  background-position-x: center;
+  background-position-y: 15px;
+}
+
+.mainContainer4 {
+  width: 100vw;
+  height: auto;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 0;
+  background-image: url(img/Snapshoot\ Portfolio4.png);
+  background-repeat: no-repeat;
+  background-size: 80% 40%;
+  background-position-x: center;
+  background-position-y: 15px;
+}
+
+.infoCard {
+  margin-top: 80%;
 }
 
 .name {
@@ -210,6 +267,7 @@ body {
   align-content: center;
   margin-bottom: 10%;
   padding: 0;
+  margin-top: 5rem;
 }
 
 .dropdownMenu {
