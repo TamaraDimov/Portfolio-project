@@ -366,7 +366,7 @@ body {
 textarea {
   display: inline-block;
   width: 90%;
-  height: 5rem;
+  height: 10rem;
   font-size: 15px;
   border-radius: 8px;
   justify-self: center;
@@ -376,7 +376,6 @@ textarea {
 
 #textarea {
   width: 90%;
-  height: 8rem;
   justify-self: center;
   border-radius: 8px;
   padding: 10px;
@@ -393,6 +392,19 @@ input {
 }
 
 #get {
-  margin: 5%;
   margin-top: 5%;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+}
+
+.line > div {
+  width: 134px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #0d151e;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
