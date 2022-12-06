@@ -360,29 +360,51 @@ body {
   line-height: 28px;
   color: #ebebff;
   text-align: center;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
 }
 
 textarea {
-  margin-left: 5%;
   display: inline-block;
   width: 90%;
-  height: 2rem;
-  font-size: 17px;
+  height: 10rem;
+  font-size: 15px;
+  border-radius: 8px;
+  justify-self: center;
+  text-align: start;
+  padding: 3%;
 }
 
 #textarea {
-  margin-left: 5%;
   width: 90%;
-  height: 8rem;
-  justify-self: start;
+  justify-self: center;
+  border-radius: 8px;
+  padding: 10px;
 }
 
 input {
-  justify-self: start;
+  width: 90%;
+  height: 2.5rem;
+  justify-self: center;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border: 0;
 }
 
 #get {
-  margin: 5%;
-  margin-top: 20%;
+  margin-top: 5%;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+}
+
+.line > div {
+  width: 134px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #0d151e;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }

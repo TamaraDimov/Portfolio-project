@@ -248,20 +248,24 @@
       <section class="mainContainerAboutme2">
       <header class="top">
         <div class="contact_info">
-          <p class="contactMe">Contact me</p>
+          <h2 class="contactMe">Contact me</h2>
           <p class="moreInfo">
             If you have an application you are interested in developing, a feature that 
         you need built or a project that needs cooding. I'd love to help with it.
           </p>
         </div>       
-        <section class="inputButons">
-          <input type="text" name="name" id="name" placeholder="Enter your name" required maxlength="30" minlength="2" value="Yeremias">
+        <form class="inputButons" action="https://formspree.io/f/mnqredln" method="POST">
+          <input type="text" name="name" id="name" placeholder="Enter your name" required maxlength="30" minlength="2">
           <br>
-          <input type="email" name="email" id="email" placeholder="Enter your email" required value="natajayanj14@gmail.com">
+          <input type="email" name="email" id="email" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
           <br>
-          <textarea maxlength="500" minlength="2" placeholder="Write your message here" required></textarea>       
-      </section>
+          <textarea maxlength="500" minlength="2" placeholder="Write your message here" required></textarea>        
       <button class="more" id="get">Get It Touch</button>
+    </form>
+    <div class="line"> 
+      <div></div>
+    </div>
+      </header>
     </section>
   </body>
 </html>
