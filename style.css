@@ -360,7 +360,7 @@ body {
   line-height: 28px;
   color: #ebebff;
   text-align: center;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
 }
 
 textarea {
@@ -376,13 +376,23 @@ textarea {
   width: 90%;
   height: 8rem;
   justify-self: start;
+  border-radius: 8px;
+  padding:10px;
+  
 }
 
 input {
+  width:90%;
+  height:2.5rem;
   justify-self: start;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding-left:10px;
+  margin-left:18px;
+  border:0;
 }
 
 #get {
   margin: 5%;
-  margin-top: 20%;
+  margin-top: 5%;
 }
