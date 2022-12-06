@@ -364,32 +364,32 @@ body {
 }
 
 textarea {
-  margin-left: 5%;
   display: inline-block;
   width: 90%;
-  height: 2rem;
-  font-size: 17px;
+  height: 5rem;
+  font-size: 15px;
+  border-radius: 8px;
+  justify-self: center;
+  text-align: start;
+  padding: 3%;
 }
 
 #textarea {
-  margin-left: 5%;
   width: 90%;
   height: 8rem;
-  justify-self: start;
+  justify-self: center;
   border-radius: 8px;
-  padding:10px;
-  
+  padding: 10px;
 }
 
 input {
-  width:90%;
-  height:2.5rem;
-  justify-self: start;
+  width: 90%;
+  height: 2.5rem;
+  justify-self: center;
   border-radius: 8px;
   margin-bottom: 10px;
-  padding-left:10px;
-  margin-left:18px;
-  border:0;
+  padding-left: 10px;
+  border: 0;
 }
 
 #get {
