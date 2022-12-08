@@ -661,13 +661,13 @@ input {
     height: auto;
     display: flex;
     flex-direction: column;
+    margin-right: 20px;
   }
 
   .dropdownButtons {
     display: flex;
     flex-direction: row;
     width: 50%;
-    margin-right: 20px;
   }
 
   .aboutMe {
