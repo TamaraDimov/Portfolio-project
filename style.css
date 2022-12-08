@@ -45,7 +45,7 @@ body {
 }
 
 .intro {
-  width: 95vw;
+  width: 80vw;
   height: auto;
   font-weight: 400;
   font-size: 16px;
@@ -290,17 +290,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding-bottom: 10%;
-  padding: 0;
   margin-top: 5rem;
   background-color: white;
   padding: 10%;
   border-top-right-radius: 80px;
 }
 
-.intro {
-  width: 80%;
-}
 .dropdownMenu {
   width: 80vw;
   height: auto;
@@ -347,7 +342,6 @@ body {
 .buttonLink {
   background: #f7f7f9;
   border-radius: 8px;
-  /* box-sizing: border-box; */
   width: 100%;
   height: auto;
   display: flex;
@@ -448,7 +442,6 @@ input {
   size: 20px;
   line-height: 24px;
   font-size: 17px;
-  /* padding: 2% 5%; */
   color: #396df2;
   border-radius: 8px;
   border: 1px solid #396df2;
@@ -491,6 +484,7 @@ input {
   .introName {
     width: 70%;
   }
+
   .intro {
     font-weight: 400;
     font-size: 20px;
@@ -603,7 +597,6 @@ input {
     width: 100%;
     height: auto;
     font-size: 15px;
-    margin-bottom: 10px;
     margin-left: 0;
     padding-right: 0;
     margin-bottom: 30px;
@@ -627,7 +620,6 @@ input {
     display: flex;
     width: 100%;
     height: auto;
-    margin-bottom: 10px;
     color: #6b778c;
     margin-bottom: 30px;
   }
@@ -647,6 +639,7 @@ input {
     height: auto;
     padding: 0;
   }
+
   .dropdownMenu {
     width: 40%;
     height: auto;
@@ -669,6 +662,7 @@ input {
     display: flex;
     flex-direction: column;
   }
+
   .dropdownButtons {
     display: flex;
     flex-direction: row;
@@ -676,15 +670,10 @@ input {
     margin-right: 20px;
   }
 
-  /* #getResume {
-    size: 20px;
-    width: 50%;
-    padding-right: 8px;
-    margin-top: 20px;
-  } */
   .aboutMe {
     padding: 0;
   }
+
   .textAboutme {
     font-size: 16px;
   }
