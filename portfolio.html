@@ -14,16 +14,23 @@
   </head>
   <body>
     <section class="coverPage">
-    <header class="topHeader">
-      <a href="#" class="logo">TD</a>
-      <nav class="menu">
-        <a href="#" class="toggleNav">
-          <img src="img/Union.png" alt="menu_button" />
-        </a>
-      </nav>
-    </header>
-    <br />
-    <br />
+      <header class="topHeader">
+        <a href="#" class="logo">TD</a>
+        <nav class="menu">
+          <div>
+          <a href="#" class="toggleNav">
+            <img src="img/Union.png" alt="menu_button" />
+          </a>
+        </div>
+          <ul>
+            <li>Portfolio</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </header>
+      <br />
+      <br />
     <section class="backgroundImg">
       <div class="Personal_info">
         <h1 class="introName">I'm Tamara Dimov Glad to see you!</h1>
@@ -64,6 +71,7 @@
 
     <!--Portfolio "Works" section -->
     <!-- Secound page  -->
+    <section class="wrapCards">
 <section class="works">
      <div class="mainContainer1">
       <div class="infoCard">
@@ -181,14 +189,146 @@
 </div>
 </section>
 
+<!--  -->
+ <!--Portfolio "Works Desktop" section -->
+    <!-- Secound page  -->
+    <section class="desktopWorks">
+      <div class="desktop1">
+        <div class="img">
+          <img class="imgBG" src="img/d1.png" alt="portfolio card image"></img>
+        </div>
+       <div class="infoCard odd" >
+       <section class="info">
+         <h2 class="name">Tonic</h2>
+         <ul class="info_job">
+           <li class="job">CANOPY</li>
+           <li>Back End Dev</li>
+           <li>2015</li>
+         </ul>
+       </section>
+       <section class="decription">
+         <p>
+           A daily selection of privately personalized reads; no accounts or
+           sign-ups required.
+         </p>
+       </section>
+       <section class="linkButtons">
+         <button class="link">html</button>
+         <button class="link">css</button>
+         <button class="link">javaScript</button>
+       </section>
+       <div class="seeMore">
+         <button class="more">See Project</button>
+       </div>
+     </div>
+   </div>
+   
+     <!-- Third page  -->
+ 
+     <div class="desktop2">
+      <div class="img">
+        <img class="imgBG" src="img/d2.png" alt="portfolio card image"></img>
+      </div>
+      <div class="infoCard">
+      <section class="info">
+        <h2 class="name">Multy-Post Stories</h2>
+        <ul class="info_job">
+          <li class="job">Facebook</li>
+          <li>FULL Stack Dev</li>
+          <li>2015</li>
+        </ul>
+      </section>
+      <section class="decription">
+        <p>
+          Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.
+        </p>
+      </section>
+      <section class="linkButtons">
+        <button class="link">html</button>
+        <button class="link">Ruby on rails</button>
+        <button class="link">css</button>
+        <button class="link">javaScript</button>
+      </section>
+      <div class="seeMore">
+        <button class="more">See Project</button>
+      </div>
+    </div>
+  </div>
+ 
+   <!-- Fourth page  -->
+ 
+ <div class="desktop3">
+  <div class="img">
+    <img class="imgBG" src="img/d3.png" alt="portfolio card image"></img>
+  </div>
+   <div class="infoCard odd">
+   <section class="info">
+     <h2 class="name">Facebook 360</h2>
+     <ul class="info_job">
+       <li class="job">FACEBOOK</li>
+       <li>Full Stack Dev</li>
+       <li>2015</li>
+     </ul>
+   </section>
+   <section class="decription">
+     <p>
+      Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.
+     </p>
+   </section>
+   <section class="linkButtons">
+     <button class="link">html</button>
+     <button class="link">Ruby on rails</button>
+     <button class="link">css</button>
+     <button class="link">javaScript</button>
+   </section>
+   <div class="seeMore">
+     <button class="more">See Project</button>
+   </div>
+ </div>
+ </div>
+ 
+ <!-- Fifth page -->
+ 
+ <div class="desktop4">
+  <div class="img">
+    <img class="imgBG" src="img/d4.png" alt="portfolio card image"></img>
+  </div>
+   <div class="infoCard">
+   <section class="info">
+     <h2 class="name">Uber Navigation</h2>
+     <ul class="info_job">
+       <li class="job">Uber</li>
+       <li>Lead Developer</li>
+       <li>2018</li>
+     </ul>
+   </section>
+   <section class="decription">
+     <p>
+      A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.
+     </p>
+   </section>
+   <section class="linkButtons">
+     <button class="link">html</button>
+     <button class="link">Ruby on rails</button>
+     <button class="link">css</button>
+     <button class="link">javaScript</button>
+   </section>
+   <div class="seeMore">
+     <button class="more">See Project</button>
+   </div>
+ </div>
+ </section>
+ </div>
+ </section>
+</section>
 
     <!-- Portfolio "about me" section -->
     <!-- ABOUT ME 1 PAGE -->
     <section class="mainContainerAboutme">
       <header class="top">
-        <div class="Personal_info">
+        <div class="Personal_info aboutMe">
           <h2 class="introName">About Myself</h2>
-          <p class="intro">
+          <p class="intro textAboutme">
             Hello I'm a software developer!I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.
           </p>
           <h6 class="connect">LET'S CONNECT</h6>
@@ -217,7 +357,8 @@
             </li>
           </ul>
         </div>
-        <input type="button" class="more" value="GET MY RESUME" >
+        <input type="button" class="more" id="getResume" value="GET MY RESUME" >
+      </header>
         <ul class="dropdownMenu" >
           <li class="ddm1" class="lng"><p>Languages</p>
           <img src="img/open.png" alt="Open dropdown menu"/></li>

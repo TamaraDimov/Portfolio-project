@@ -11,6 +11,26 @@ body {
   height: auto;
 }
 
+/* .desktopWorks > .desktop1{
+  display: none;
+}
+
+.desktopWorks > .desktop2{
+  display: none;
+}
+
+.desktopWorks > .desktop3{
+  display: none;
+}
+
+.desktopWorks > .desktop4{
+  display: none;
+} */
+/* @media (max-width: 768px) {
+.wrapCards>.desktopWorks{
+  display: none;
+}} */
+
 .coverPage {
   width: 100vw;
   height: auto;
@@ -24,6 +44,10 @@ body {
   font-weight: 700;
   font-size: 20px;
   text-decoration: none;
+}
+
+.menu > ul {
+  display: none;
 }
 
 .introName {
@@ -100,6 +124,10 @@ body {
   row-gap: 5rem;
 }
 
+.wrapCards {
+  background-color: #e5e5e5;
+}
+
 .portfolio2 {
   box-sizing: border-box;
   width: 100%;
@@ -124,6 +152,7 @@ body {
   background-size: 80% 40%;
   background-position-x: center;
   background-position-y: 15px;
+  background-color: white;
 }
 
 .mainContainer2 {
@@ -140,6 +169,7 @@ body {
   background-size: 80% 40%;
   background-position-x: center;
   background-position-y: 15px;
+  background-color: white;
 }
 
 .mainContainer3 {
@@ -156,6 +186,7 @@ body {
   background-size: 80% 40%;
   background-position-x: center;
   background-position-y: 15px;
+  background-color: white;
 }
 
 .mainContainer4 {
@@ -172,6 +203,7 @@ body {
   background-size: 80% 40%;
   background-position-x: center;
   background-position-y: 15px;
+  background-color: white;
 }
 
 .infoCard {
@@ -263,11 +295,13 @@ body {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
   margin-bottom: 10%;
   padding: 0;
   margin-top: 5rem;
+  background-color: white;
 }
 
 .dropdownMenu {
@@ -407,4 +441,252 @@ input {
   background-color: #0d151e;
   margin-top: 32px;
   margin-bottom: 8px;
+}
+
+.desktopWorks {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .backgroundImg {
+    background-image: url(img/Header\ bg@2x.png);
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    margin-bottom: 4rem;
+  }
+
+  .menu li {
+    padding-right: 3rem;
+    color: #344563;
+  }
+
+  .menu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 20px;
+    color: #344563;
+  }
+
+  .menu > div {
+    display: none;
+  }
+
+  .Personal_info {
+    padding-left: 20%;
+    align-self: center;
+    padding-top: 15%;
+  }
+
+  .introName {
+    width: 70%;
+  }
+  .intro {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    width: 80%;
+  }
+
+  .connect {
+    padding-left: 0;
+  }
+
+  .media_links {
+    padding-left: 20%;
+  }
+
+  .wrapCards > .works {
+    display: none;
+  }
+
+  .desktopWorks {
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    row-gap: 5rem;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .odd {
+    padding-left: 7rem;
+  }
+
+  .desktop1 {
+    width: 80%;
+    height: auto;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-content: center;
+    column-gap: 40px;
+    background-color: white;
+  }
+
+  .desktop2 {
+    width: 80%;
+    height: auto;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-content: center;
+    column-gap: 10px;
+    background-color: white;
+  }
+
+  .desktop3 {
+    width: 80%;
+    height: auto;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-content: center;
+    column-gap: 40px;
+    background-color: white;
+  }
+
+  .desktop4 {
+    width: 80%;
+    height: auto;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-content: center;
+    column-gap: 10px;
+    background-color: white;
+  }
+
+  .imgBG {
+    width: 90%;
+    height: 90%;
+    margin: 15px;
+  }
+
+  .infoCard {
+    box-sizing: border-box;
+    width: 50%;
+    height: auto;
+    margin: 15px;
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .name {
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .decription {
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .linkButtons {
+    width: 100%;
+    margin-top: 3% 0;
+  }
+
+  .more {
+    margin-top: 0;
+    margin-bottom: 2%;
+    margin-right: 0;
+  }
+
+  .info_job {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    color: #6b778c;
+    margin-bottom: 30px;
+  }
+
+  .job {
+    color: #344563;
+  }
+
+  .mainContainerAboutme {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .top {
+    width: 50%;
+    height: auto;
+  }
+  .dropdownMenu {
+    width: 40%;
+    height: auto;
+  }
+
+  .ddm1 {
+    width: 40%;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  .ddm {
+    width: 40%;
+    height: auto;
+  }
+
+  .buttonLink {
+    width: 10%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .dropdownButtons {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    row-gap: 8px;
+  }
+
+  #getResume {
+    width: 50%;
+    margin-left: 4.5rem;
+    padding-right: 8px;
+    margin-top: 20px;
+  }
+
+  .textAboutme {
+    font-size: 16px;
+  }
+
+  .mainContainerAboutme2 {
+    display: flex;
+    justify-items: center;
+  }
+
+  .moreInfo {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #get {
+    margin-left: 25%;
+  }
 }
