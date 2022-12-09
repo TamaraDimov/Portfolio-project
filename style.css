@@ -364,7 +364,8 @@ body {
   font-size: 15px;
   align-items: center;
   justify-content: flex-start;
-  padding: 20px 40px;
+  padding: 20px;
+  padding-right: 40px;
   margin-bottom: 10px;
 }
 
@@ -509,7 +510,9 @@ input {
   }
 
   .textAboutme {
+    font-size: 16px;
     margin-right: 0;
+    padding-right: 0;
   }
 
   .intro {
@@ -663,6 +666,7 @@ input {
     width: 100%;
     display: flex;
     flex-direction: row;
+    padding-left: 20px;
   }
 
   .top {
@@ -675,6 +679,7 @@ input {
   .dropdownMenu {
     width: 40%;
     height: auto;
+    margin-left: -40px;
   }
 
   .ddm1 {
@@ -692,15 +697,21 @@ input {
     height: auto;
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
-    padding: 10px;
-    padding-right: 40px;
+    margin-right: 5%;
+    padding: 8px;
+    padding-right: 25px;
     padding-bottom: 20px;
   }
 
-  .buttons {
-    padding-right: 60px;
+  .button2 {
+    padding-right: 50px;
     padding-left: 20px;
+  }
+
+  .button3 {
+    padding-right: 50px;
+    padding-left: 20px;
+    margin-right: 0;
   }
 
   .js {
@@ -716,16 +727,6 @@ input {
 
   .aboutMe {
     padding: 0;
-    margin-right: 0;
-  }
-
-  .textAboutme {
-    font-size: 16px;
-    margin-right: 0;
-    padding-right: 0;
-  }
-
-  .introName {
     margin-right: 0;
   }
 
