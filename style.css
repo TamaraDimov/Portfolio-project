@@ -9,7 +9,12 @@
 body {
   width: 100vw;
   height: auto;
-  background-color: #e5e5e5;
+  background-color: #f7f7f9;
+  overflow-x: hidden;
+}
+
+.bgcolor {
+  background-color: white;
 }
 
 .coverPage {
@@ -108,6 +113,18 @@ body {
   align-self: center;
 }
 
+.coverInfo {
+  margin-left: 10%;
+}
+
+.coverName {
+  width: 50%;
+}
+
+.coverIntro {
+  width: 60%;
+}
+
 /* Portfolio "Works" section */
 
 .works {
@@ -117,7 +134,7 @@ body {
 }
 
 .wrapCards {
-  background-color: #e5e5e5;
+  background-color: #f7f7f9;
 }
 
 .portfolio2 {
@@ -266,6 +283,7 @@ body {
   background-color: white;
   margin-top: 5%;
   margin-bottom: 2%;
+  margin-right: 0;
 }
 
 .more:hover {
@@ -284,8 +302,6 @@ body {
   box-sizing: border-box;
   width: 100vw;
   height: auto;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -334,7 +350,7 @@ body {
 .dropdownButtons {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 60%;
   height: auto;
   justify-content: space-between;
 }
@@ -349,6 +365,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   padding: 20px 40px;
+  margin-bottom: 10px;
 }
 
 /* aboutme2 */
@@ -479,10 +496,20 @@ input {
     padding-left: 20%;
     align-self: center;
     padding-top: 15%;
+    margin-right: 0;
+  }
+
+  .coverInfo {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .introName {
     width: 70%;
+  }
+
+  .textAboutme {
+    margin-right: 0;
   }
 
   .intro {
@@ -490,14 +517,18 @@ input {
     font-size: 20px;
     line-height: 28px;
     width: 80%;
+    margin-right: 0;
   }
 
   .connect {
     padding-left: 0;
+    margin-right: 0;
+    display: inline-block;
   }
 
   .media_links {
     padding-bottom: 20px;
+    margin-right: 0;
   }
 
   .wrapCards > .works {
@@ -635,9 +666,10 @@ input {
   }
 
   .top {
-    width: 60%;
+    width: 50%;
     height: auto;
     padding: 0;
+    margin: 0;
   }
 
   .dropdownMenu {
@@ -657,25 +689,44 @@ input {
   }
 
   .buttonLink {
-    width: 10%;
     height: auto;
     display: flex;
     flex-direction: column;
     margin-right: 20px;
+    padding: 10px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+  }
+
+  .buttons {
+    padding-right: 60px;
+    padding-left: 20px;
+  }
+
+  .js {
+    margin-top: 15px;
+    font-size: 20px;
   }
 
   .dropdownButtons {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 80%;
   }
 
   .aboutMe {
     padding: 0;
+    margin-right: 0;
   }
 
   .textAboutme {
     font-size: 16px;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .introName {
+    margin-right: 0;
   }
 
   .mainContainerAboutme2 {
