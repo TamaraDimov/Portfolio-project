@@ -9,6 +9,12 @@
 body {
   width: 100vw;
   height: auto;
+  background-color: #f7f7f9;
+  overflow-x: hidden;
+}
+
+.bgcolor {
+  background-color: white;
 }
 
 .coverPage {
@@ -16,6 +22,8 @@ body {
   height: auto;
   margin-bottom: 6rem;
   padding: 1%;
+  background-color: white;
+  border-bottom-left-radius: 80px;
 }
 
 .logo {
@@ -24,6 +32,10 @@ body {
   font-weight: 700;
   font-size: 20px;
   text-decoration: none;
+}
+
+.menu > ul {
+  display: none;
 }
 
 .introName {
@@ -38,7 +50,7 @@ body {
 }
 
 .intro {
-  width: 95vw;
+  width: 80vw;
   height: auto;
   font-weight: 400;
   font-size: 16px;
@@ -54,7 +66,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   padding-left: 1%;
-  margin-top: 10%;
 }
 
 .topHeader {
@@ -72,6 +83,14 @@ body {
   list-style: none;
   margin-top: 1rem;
   font-size: 24px;
+  width: 40%;
+  padding-left: 0;
+}
+
+.my_links {
+  width: 40%;
+  margin: 0;
+  padding: 0;
 }
 
 .fa {
@@ -84,6 +103,7 @@ body {
   background-size: 100%;
   top: 103.9993896484375px;
   margin-bottom: 6rem;
+  background-color: white;
 }
 
 .toggleNav {
@@ -92,12 +112,28 @@ body {
   align-self: center;
 }
 
+.coverInfo {
+  margin-left: 10%;
+}
+
+.coverName {
+  width: 50%;
+}
+
+.coverIntro {
+  width: 60%;
+}
+
 /* Portfolio "Works" section */
 
 .works {
   display: grid;
   grid-template-rows: 4, 1fr;
   row-gap: 5rem;
+}
+
+.wrapCards {
+  background-color: #f7f7f9;
 }
 
 .portfolio2 {
@@ -124,6 +160,7 @@ body {
   background-size: 80% 40%;
   background-position-x: center;
   background-position-y: 15px;
+  background-color: white;
 }
 
 .mainContainer2 {
@@ -140,6 +177,7 @@ body {
   background-size: 80% 40%;
   background-position-x: center;
   background-position-y: 15px;
+  background-color: white;
 }
 
 .mainContainer3 {
@@ -156,6 +194,7 @@ body {
   background-size: 80% 40%;
   background-position-x: center;
   background-position-y: 15px;
+  background-color: white;
 }
 
 .mainContainer4 {
@@ -172,6 +211,7 @@ body {
   background-size: 80% 40%;
   background-position-x: center;
   background-position-y: 15px;
+  background-color: white;
 }
 
 .infoCard {
@@ -242,6 +282,7 @@ body {
   background-color: white;
   margin-top: 5%;
   margin-bottom: 2%;
+  margin-right: 0;
 }
 
 .more:hover {
@@ -260,18 +301,18 @@ body {
   box-sizing: border-box;
   width: 100vw;
   height: auto;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin-bottom: 10%;
-  padding: 0;
   margin-top: 5rem;
+  background-color: white;
+  padding: 10%;
+  border-top-right-radius: 80px;
 }
 
 .dropdownMenu {
-  width: 90vw;
+  width: 80vw;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -286,9 +327,9 @@ body {
   width: 80vw;
   height: auto;
   display: flex;
-  font-size: 20px;
+  font-size: 24px;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 20px;
   padding: 5% 0;
   border-bottom: 1px solid #dfe1e6;
@@ -298,9 +339,9 @@ body {
   width: 80vw;
   height: auto;
   display: flex;
-  font-size: 20px;
+  font-size: 24px;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 20px;
   margin-bottom: 1rem;
 }
@@ -308,22 +349,23 @@ body {
 .dropdownButtons {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 80vw;
+  width: 60%;
   height: auto;
+  justify-content: space-between;
 }
 
 .buttonLink {
   background: #f7f7f9;
   border-radius: 8px;
-  box-sizing: border-box;
-  width: 90vw;
-  height: 66px;
+  width: 100%;
+  height: auto;
   display: flex;
   font-size: 15px;
   align-items: center;
   justify-content: flex-start;
-  gap: 20px;
+  padding: 20px;
+  padding-right: 40px;
+  margin-bottom: 10px;
 }
 
 /* aboutme2 */
@@ -407,4 +449,299 @@ input {
   background-color: #0d151e;
   margin-top: 32px;
   margin-bottom: 8px;
+}
+
+.desktopWorks {
+  display: none;
+}
+
+#getResume {
+  size: 20px;
+  line-height: 24px;
+  font-size: 17px;
+  color: #396df2;
+  border-radius: 8px;
+  border: 1px solid #396df2;
+  background-color: white;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+@media (min-width: 768px) {
+  .backgroundImg {
+    background-image: url(img/Header\ bg@2x.png);
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    margin-bottom: 4rem;
+  }
+
+  .menu li {
+    padding-right: 3rem;
+    color: #344563;
+  }
+
+  .menu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 20px;
+    color: #344563;
+  }
+
+  .menu > div {
+    display: none;
+  }
+
+  .Personal_info {
+    padding-left: 20%;
+    align-self: center;
+    padding-top: 15%;
+    margin-right: 0;
+  }
+
+  .coverInfo {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .introName {
+    width: 70%;
+  }
+
+  .textAboutme {
+    font-size: 16px;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .intro {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    width: 80%;
+    margin-right: 0;
+  }
+
+  .connect {
+    padding-left: 0;
+    margin-right: 0;
+    display: inline-block;
+  }
+
+  .media_links {
+    padding-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .wrapCards > .works {
+    display: none;
+  }
+
+  .desktopWorks {
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    row-gap: 5rem;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .odd {
+    padding-left: 7rem;
+  }
+
+  .desktop1 {
+    width: 90%;
+    height: auto;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-content: center;
+    column-gap: 40px;
+    background-color: white;
+  }
+
+  .desktop2 {
+    width: 90%;
+    height: auto;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-content: center;
+    column-gap: 10px;
+    background-color: white;
+  }
+
+  .desktop3 {
+    width: 90%;
+    height: auto;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-content: center;
+    column-gap: 40px;
+    background-color: white;
+  }
+
+  .desktop4 {
+    width: 90%;
+    height: auto;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-content: center;
+    column-gap: 10px;
+    background-color: white;
+  }
+
+  .imgBG {
+    width: 90%;
+    height: 90%;
+    margin: 15px;
+  }
+
+  .infoCard {
+    box-sizing: border-box;
+    width: 50%;
+    height: auto;
+    margin: 15px;
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .name {
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .decription {
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    margin-left: 0;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .linkButtons {
+    width: 100%;
+    margin-top: 3% 0;
+  }
+
+  .more {
+    margin-top: 0;
+    margin-bottom: 2%;
+    margin-right: 0;
+  }
+
+  .info_job {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    color: #6b778c;
+    margin-bottom: 30px;
+  }
+
+  .job {
+    color: #344563;
+  }
+
+  .mainContainerAboutme {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+  }
+
+  .top {
+    width: 50%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .dropdownMenu {
+    width: 40%;
+    height: auto;
+    margin-left: -40px;
+  }
+
+  .ddm1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    justify-content: space-between;
+  }
+
+  .ddm {
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+  }
+
+  .buttonLink {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    padding: 8px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+  }
+
+  .button2 {
+    padding-right: 50px;
+    padding-left: 20px;
+  }
+
+  .button3 {
+    padding-right: 50px;
+    padding-left: 20px;
+    margin-right: 0;
+  }
+
+  .js {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+
+  .dropdownButtons {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+  }
+
+  .aboutMe {
+    padding: 0;
+    margin-right: 0;
+  }
+
+  .mainContainerAboutme2 {
+    display: flex;
+    justify-items: center;
+  }
+
+  .moreInfo {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #get {
+    margin-left: 25%;
+  }
 }
