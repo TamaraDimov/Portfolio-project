@@ -472,7 +472,7 @@ input {
 
 @media (min-width: 768px) {
   .backgroundImg {
-    background-image: url(img/Header/bg@2x.png);
+    background-image: url(img/Header\ bg@2x.png);
     background-repeat: no-repeat;
     background-size: 100% 120%;
     margin-bottom: 4rem;
@@ -754,5 +754,14 @@ input {
 
   #get {
     margin-left: 25%;
+  }
+
+  .menuBtn {
+    transition: all 0.5s;
+  }
+
+  .menuBtn:hover {
+    font-size: larger;
+    font-weight: bold;
   }
 }
