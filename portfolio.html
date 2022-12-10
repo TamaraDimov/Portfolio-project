@@ -23,9 +23,9 @@
           </a>
         </div>
           <ul>
-            <li>Portfolio</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li class="menuBtn">Portfolio</li>
+            <li class="menuBtn">About</li>
+            <li class="menuBtn">Contact</li>
           </ul>
         </nav>
       </header>
@@ -74,7 +74,7 @@
     <!-- Secound page  -->
     <section class="wrapCards">
 <section class="works">
-     <div class="mainContainer1">
+     <div class="mainContainer1 mobile-cards">
       <div class="infoCard">
       <section class="info">
         <h2 class="name">Tonic</h2>
@@ -103,7 +103,7 @@
   
     <!-- Third page  -->
 
-    <div class="mainContainer2">
+    <div class="mainContainer2 mobile-cards">
       <div class="infoCard">
       <section class="info">
         <h2 class="name">Multy-Post Stories</h2>
@@ -132,7 +132,7 @@
 
   <!-- Fourth page  -->
 
-<div class="mainContainer3">
+<div class="mainContainer3 mobile-cards">
   <div class="infoCard">
   <section class="info">
     <h2 class="name">Tonic</h2>
@@ -161,7 +161,7 @@
 
 <!-- Fifth page -->
 
-<div class="mainContainer4">
+<div class="mainContainer4 mobile-cards">
   <div class="infoCard">
   <section class="info">
     <h2 class="name">Multy-Post Stories</h2>
@@ -194,7 +194,7 @@
  <!--Portfolio "Works Desktop" section -->
     <!-- Secound page  -->
     <section class="desktopWorks">
-      <div class="desktop1">
+      <div class="desktop-cards desktop1">
         <div class="img">
           <img class="imgBG" src="img/d1.png" alt="portfolio card image"></img>
         </div>
@@ -226,7 +226,7 @@
    
      <!-- Third page  -->
  
-     <div class="desktop2">
+     <div class="desktop-cards desktop2">
       <div class="img">
         <img class="imgBG" src="img/d2.png" alt="portfolio card image"></img>
       </div>
@@ -258,7 +258,7 @@
  
    <!-- Fourth page  -->
  
- <div class="desktop3">
+ <div class="desktop-cards desktop3">
   <div class="img">
     <img class="imgBG" src="img/d3.png" alt="portfolio card image"></img>
   </div>
@@ -290,7 +290,7 @@
  
  <!-- Fifth page -->
  
- <div class="desktop4">
+ <div class="desktop-cards desktop4">
   <div class="img">
     <img class="imgBG" src="img/d4.png" alt="portfolio card image"></img>
   </div>
@@ -392,27 +392,27 @@
       <!-- about me 2nd page -->
 
       <section class="mainContainerAboutme2">
-      <div class="top">
-        <div class="contact_info">
-          <h2 class="contactMe">Contact me</h2>
-          <p class="moreInfo">
-            If you have an application you are interested in developing, a feature that 
-        you need built or a project that needs cooding. I'd love to help with it.
-          </p>
-        </div>       
-        <form class="inputButons" action="https://formspree.io/f/mnqredln" method="POST">
-          <input type="text" name="name" id="name" placeholder="Enter your name" required maxlength="30" minlength="2">
-          <br>
-          <input type="email" name="email" id="email" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-          <br>
-          <textarea maxlength="500" minlength="2" placeholder="Write your message here" required></textarea>        
-      <button class="more" id="get">Get It Touch</button>
-    </form>
-    <div class="line"> 
-      <div></div>
-    </div>
+        <div class="top">
+          <div class="contact_info">
+            <h2 class="contactMe">Contact me</h2>
+            <p class="moreInfo">
+              If you have an application you are interested in developing, a feature that 
+          you need built or a project that needs cooding. I'd love to help with it.
+            </p>
+          </div>       
+          <form class="inputButons" action="https://formspree.io/f/mnqredln" method="POST">
+            <input type="text" name="name" id="name" placeholder="Enter your name" required maxlength="30" minlength="2">
+            <br>
+            <input type="email" name="email" id="email" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <br>
+            <textarea id="textarea" maxlength="500" minlength="2" placeholder="Write your message here" required></textarea>       
+            <button class="more" id="get">Get It Touch</button>
+          </form>
+      <div class="line"> 
+        <div></div>
       </div>
-    </section>
-  </div>
-  </body>
+        </div>
+      </section>
+    </div>
+    </body>
 </html>

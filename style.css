@@ -283,10 +283,13 @@ body {
   margin-top: 5%;
   margin-bottom: 2%;
   margin-right: 0;
+  transition: all 0.5s;
 }
 
 .more:hover {
   background-color: #7e9dec;
+  font-size: 18px;
+  color: #fff;
 }
 
 .more:active {
@@ -604,6 +607,14 @@ input {
     background-color: white;
   }
 
+  .desktop-cards {
+    transition: width 0.5s;
+  }
+
+  .desktop-cards:hover {
+    width: 95%;
+  }
+
   .imgBG {
     width: 90%;
     height: 90%;
@@ -743,5 +754,14 @@ input {
 
   #get {
     margin-left: 25%;
+  }
+
+  .menuBtn {
+    transition: all 0.5s;
+  }
+
+  .menuBtn:hover {
+    font-size: larger;
+    font-weight: bold;
   }
 }
