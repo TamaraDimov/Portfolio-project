@@ -283,10 +283,13 @@ body {
   margin-top: 5%;
   margin-bottom: 2%;
   margin-right: 0;
+  transition: all 0.5s;
 }
 
 .more:hover {
   background-color: #7e9dec;
+  font-size: 18px;
+  color: #fff;
 }
 
 .more:active {
@@ -469,7 +472,7 @@ input {
 
 @media (min-width: 768px) {
   .backgroundImg {
-    background-image: url(img/Header\ bg@2x.png);
+    background-image: url(img/Header/bg@2x.png);
     background-repeat: no-repeat;
     background-size: 100% 120%;
     margin-bottom: 4rem;
