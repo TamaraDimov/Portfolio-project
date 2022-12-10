@@ -604,6 +604,14 @@ input {
     background-color: white;
   }
 
+  .desktop-cards {
+    transition: width 0.5s;
+  }
+
+  .desktop-cards:hover {
+    width: 95%;
+  }
+
   .imgBG {
     width: 90%;
     height: 90%;
