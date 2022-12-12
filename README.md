@@ -38,6 +38,7 @@ After you're finished please remove all the comments and instructions!
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Key Features](#key-features)
+    - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
 - [👥 Authors](#authors)
@@ -67,6 +68,13 @@ After you're finished please remove all the comments and instructions!
 - **[figma template 1]**
 - **[HTML]**
 - **[CSS]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://tamaradimov.github.io/Portfolio-project/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,6 +109,15 @@ Example commands:
 - Twitter: [@DimovTamara](https://twitter.com/home)
 - LinkedIn: [Tamara Dimov](https://www.linkedin.com/in/tamara-dimov-b85139a2/)
 
+👤 **Author2** <a name="authors">Fauziyah Zeeyah</a>
+
+- GitHub: [@fauziyahzeeyah](https://github.com/fauziyahzeeyah)
+
+
+👤 **Author3** <a name="authors">Grece Htet</a>
+
+- GitHub: [@GraceHtet](https://github.com/GraceHtet)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -110,8 +127,7 @@ Example commands:
 > Desktop version of the personal portfolio
 
 - [ ] **[Desktop verson]**
-<!-- - [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]** -->
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
