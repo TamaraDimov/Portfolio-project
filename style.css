@@ -288,7 +288,7 @@ body {
 }
 
 .more:hover {
-  color: #ffffff;
+  color: #fff;
   background-color: #396df2;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
@@ -443,7 +443,7 @@ input {
 }
 
 #get:hover {
-  background: #ffffff;
+  background: #fff;
   color: #123690;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
