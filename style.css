@@ -69,7 +69,8 @@ body {
 }
 
 .topHeader {
-  width: 95vw;
+  width: 85vw;
+  padding-left: 25px;
   height: auto;
   display: flex;
   justify-content: space-between;
@@ -264,8 +265,8 @@ body {
 .link {
   background-color: #ebebff;
   font-size: 15px;
-  color: #6070ff;
-  border: none;
+  color: #123690;
+  border: 1px solid #123690;
   border-radius: 8px;
   text-decoration: none;
   padding: 5px 10px;
@@ -287,9 +288,10 @@ body {
 }
 
 .more:hover {
-  background-color: #7e9dec;
-  font-size: 18px;
   color: #fff;
+  background-color: #396df2;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .more:active {
@@ -438,6 +440,13 @@ input {
 
 #get {
   margin-top: 5%;
+}
+
+#get:hover {
+  background: #fff;
+  color: #123690;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .line {
