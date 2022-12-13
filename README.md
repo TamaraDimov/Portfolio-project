@@ -118,6 +118,10 @@ Example commands:
 
 - GitHub: [@GraceHtet](https://github.com/GraceHtet)
 
+👤 **Author4** <a name="authors">Ahmad Sohail Batoor</a>
+
+- GitHub: [@GraceHtet](https://github.com/batoorsohail)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
