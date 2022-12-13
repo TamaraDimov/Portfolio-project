@@ -264,7 +264,7 @@ body {
 .link {
   background-color: #ebebff;
   font-size: 15px;
-  color: #6070ff;
+  color: #396df2;
   border: none;
   border-radius: 8px;
   text-decoration: none;
@@ -287,7 +287,7 @@ body {
 }
 
 .more:hover {
-  background-color: #7e9dec;
+  background-color: #396df2;
   font-size: 18px;
   color: #fff;
 }
