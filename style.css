@@ -5,7 +5,6 @@
   padding: 0%;
   box-sizing: border-box;
 }
-
 body {
   width: 100vw;
   height: auto;
@@ -34,6 +33,14 @@ body {
   text-decoration: none;
 }
 
+.blur {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+}
+
 .menu > ul {
   display: none;
 }
@@ -58,22 +65,36 @@ body {
   display: block;
 }
 
+.exit {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  top: -20px;
+}
+
 .show .menu {
   position: relative;
   display: block;
   z-index: 9;
+  /* position: absolute; */
+  height: 40px;
+  left: 16px;
+  right: 16px;
+  top: 60px;
 }
 
-.show .menu li{
+.show .menu li {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
   z-index: 9;
   color: #fff;
+  padding-bottom: 15px;
 }
 
 .mobile-overlay {
-  background-color: #6070ffb6 !important;
+  background-color: #6070ffe3 !important;
   height: 100vh;
   width: 100vw;
   position: fixed;
