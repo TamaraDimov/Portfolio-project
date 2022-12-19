@@ -61,8 +61,7 @@ body {
   color: #344563;
   position: absolute;
   height: 40px;
-  top: 60px;
-  /* left: 30px; */
+  right: 150px;
 }
 
 .show .toggleNav {
