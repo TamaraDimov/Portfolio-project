@@ -33,7 +33,11 @@ body {
   text-decoration: none;
 }
 
-.blur {
+.toggleNav .exit {
+  display: none;
+}
+
+.show .blur {
   position: fixed;
   z-index: 1;
   width: 100vw;
@@ -65,10 +69,11 @@ body {
   display: block;
 }
 
-.exit {
+.show .exit {
   width: 20px;
   height: 20px;
   position: absolute;
+  display: block;
   right: 20px;
   top: -20px;
 }
@@ -92,7 +97,7 @@ body {
   padding-bottom: 15px;
 }
 
-.mobile-overlay {
+.show .mobile-overlay {
   background-color: #6070ffe3 !important;
   height: 100vh;
   width: 100vw;
