@@ -1,19 +1,19 @@
 const toggleNavbar = () => {
-  document.querySelector(".coverPage").classList.toggle("show");
+  document.querySelector('.coverPage').classList.toggle('show');
 };
 
-document.querySelector(".toggleNav").addEventListener("click", function () {
+document.querySelector('.toggleNav').addEventListener('click', () => {
   toggleNavbar();
 });
 
-document.querySelector(".exit").addEventListener("click", function () {
+document.querySelector('.exit').addEventListener('click', () => {
   toggleNavbar();
 });
 
-const menuBtn = document.querySelectorAll(".menuBtn");
+const menuBtn = document.querySelectorAll('.menuBtn');
 const menuArr = Array.from(menuBtn);
 menuArr.forEach((element) => {
-  element.addEventListener("click", function () {
+  element.addEventListener('click', () => {
     toggleNavbar();
   });
 });
