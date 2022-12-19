@@ -7,7 +7,7 @@ document.querySelector(".toggleNav").addEventListener("click", function () {
 });
 
 document.querySelector(".exit").addEventListener("click", function () {
-    toggleNavbar();
+  toggleNavbar();
 });
 
 const menuBtn = document.querySelectorAll(".menuBtn");

@@ -113,7 +113,6 @@ Example commands:
 
 - GitHub: [@fauziyahzeeyah](https://github.com/fauziyahzeeyah)
 
-
 👤 **Author3** <a name="authors">Grece Htet</a>
 
 - GitHub: [@GraceHtet](https://github.com/GraceHtet)
@@ -121,6 +120,12 @@ Example commands:
 👤 **Author4** <a name="authors">Ahmad Sohail Batoor</a>
 
 - GitHub: [@GraceHtet](https://github.com/batoorsohail)
+
+👤 **Author5** <a name="authors">Damilare Protocoll</a>
+
+- GitHub: [@mrprotocoll](https://github.com/mrprotocoll)
+- Twitter: [@dprotocoll](https://twitter.com/dprotocoll)
+- LinkedIn: [Damilare Arikeusola](https://www.linkedin.com/in/mrprotocoll/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -131,7 +136,6 @@ Example commands:
 > Desktop version of the personal portfolio
 
 - [ ] **[Desktop verson]**
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

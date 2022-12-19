@@ -1,10 +1,10 @@
-/* @media all and (max-width: 768px) { */
 * {
   font-family: sans-serif;
   margin: 0;
   padding: 0%;
   box-sizing: border-box;
 }
+
 body {
   width: 100vw;
   height: auto;
@@ -33,6 +33,12 @@ body {
   text-decoration: none;
 }
 
+.toggleNav {
+  width: 18px;
+  height: 12px;
+  align-self: center;
+}
+
 .toggleNav .exit {
   display: none;
 }
@@ -53,7 +59,17 @@ body {
   display: block !important;
 }
 
+.line > div {
+  width: 134px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #0d151e;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
 .show .menu ul {
+  width: 100vw;
   display: block;
   justify-content: flex-end;
   list-style: none;
@@ -61,7 +77,7 @@ body {
   color: #344563;
   position: absolute;
   height: 40px;
-  right: 150px;
+  left: 10px;
 }
 
 .show .toggleNav {
@@ -82,18 +98,19 @@ body {
 }
 
 .show .menu {
+  width: 100vw;
   position: relative;
   display: block;
   z-index: 9;
-  /* position: absolute; */
   height: 40px;
   top: 60px;
-  /* left: 30px; */
 }
+
 .show .menu a {
   text-decoration: none;
   color: #fff;
 }
+
 .show .menu li {
   font-weight: 600;
   font-size: 32px;
@@ -177,12 +194,6 @@ body {
   top: 103.9993896484375px;
   margin-bottom: 6rem;
   background-color: white;
-}
-
-.toggleNav {
-  width: 18px;
-  height: 12px;
-  align-self: center;
 }
 
 .coverInfo {
@@ -526,15 +537,6 @@ input {
   justify-content: center;
 }
 
-.line > div {
-  width: 134px;
-  height: 5px;
-  border-radius: 10px;
-  background-color: #0d151e;
-  margin-top: 32px;
-  margin-bottom: 8px;
-}
-
 .desktopWorks {
   display: none;
 }
@@ -552,6 +554,14 @@ input {
 }
 
 @media (min-width: 768px) {
+  .blur {
+    display: none;
+  }
+
+  .mobile-overlay {
+    display: none;
+  }
+
   .backgroundImg {
     background-image: url(img/Header\ bg@2x.png);
     background-repeat: no-repeat;
@@ -842,6 +852,38 @@ input {
   }
 
   .menuBtn:hover {
+    font-size: larger;
+    font-weight: bold;
+  }
+
+  .show .menu ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 20px;
+    color: #344563;
+    margin-top: -60px;
+  }
+
+  .show .menu li {
+    font-size: 15px;
+    line-height: 44px;
+    color: #344563;
+    padding-bottom: 15px;
+  }
+
+  .show .menu a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .show .menuBtn {
+    transition: all 0.5s;
+  }
+
+  .show .menuBtn:hover {
     font-size: larger;
     font-weight: bold;
   }
