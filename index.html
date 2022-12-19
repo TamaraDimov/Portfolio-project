@@ -14,18 +14,25 @@
   </head>
   <body>
     <section class="coverPage">
+      <div class="mobile-overlay blueB"></div>
+      <div class="blur"></div>
       <header class="topHeader">
         <a href="#" class="logo">TD</a>
         <nav class="menu">
           <div>
-          <a href="#" class="toggleNav">
-            <img src="img/Union.png" alt="menu_button" />
-          </a>
-        </div>
-          <ul>
-            <li class="menuBtn">Portfolio</li>
-            <li class="menuBtn">About</li>
-            <li class="menuBtn">Contact</li>
+            <a href="#" class="toggleNav">
+              <img src="img/Union.png" alt="menu_button" />
+            </a>
+          </div>
+          <div class="exit">
+            <a href="#" class="exit toggleNav">
+              <img src="img/exit.png" alt="menu_exit_button" />
+            </a>
+          </div>
+          <ul class="desktopMenu">
+            <li class="menuBtn"><a href="#portfolio">Portfolio</a></li>
+            <li class="menuBtn"><a href="#about">About</a></li>
+            <li class="menuBtn"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -72,7 +79,7 @@
 
     <!--Portfolio "Works" section -->
     <!-- Secound page  -->
-    <section class="wrapCards">
+    <section class="wrapCards" id="portfolio">
 <section class="works" title="work_section_card">
      <div class="mainContainer1 mobile-cards">
       <div class="infoCard">
@@ -325,7 +332,7 @@
 
     <!-- Portfolio "about me" section -->
     <!-- ABOUT ME 1 PAGE -->
-    <div class="bgcolor">
+    <div class="bgcolor" id="about">
     <section class="mainContainerAboutme" title="about_me_information">
       <div class="top">
         <div class="Personal_info aboutMe">
@@ -391,7 +398,7 @@
       
       <!-- about me 2nd page -->
 
-      <section class="mainContainerAboutme2" title="contact_information">
+      <section class="mainContainerAboutme2" id="contact" title="contact_information">
         <div class="top">
           <div class="contact_info">
             <h2 class="contactMe">Contact me</h2>
@@ -414,5 +421,6 @@
         </div>
       </section>
     </div>
+    <script src="script.js"></script>
     </body>
 </html>
