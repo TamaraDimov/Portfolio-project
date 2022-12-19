@@ -59,6 +59,10 @@ body {
   list-style: none;
   gap: 20px;
   color: #344563;
+  position: absolute;
+  height: 40px;
+  top: 60px;
+  /* left: 30px; */
 }
 
 .show .toggleNav {
@@ -84,11 +88,13 @@ body {
   z-index: 9;
   /* position: absolute; */
   height: 40px;
-  left: 16px;
-  right: 16px;
   top: 60px;
+  /* left: 30px; */
 }
-
+.show .menu a {
+  text-decoration: none;
+  color: #fff;
+}
 .show .menu li {
   font-weight: 600;
   font-size: 32px;
