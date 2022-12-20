@@ -564,13 +564,14 @@ input {
   align-content: center;
   z-index: 9;
   padding: 0 20px;
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
 }
 
 .popup .imgBG {
   width: 100%;
+  margin-left: 0;
 }
 
 .mobile-body {
@@ -580,6 +581,10 @@ input {
   z-index: 2;
   position: relative;
   padding: 14px;
+  max-width: 1170px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0 auto;
 }
 
 .icon {
@@ -937,5 +942,23 @@ input {
   .show .menuBtn:hover {
     font-size: larger;
     font-weight: bold;
+  }
+
+  .decription {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .decriptionLeft {
+    width: 60%;
+    margin-top: 12px;
+  }
+  .decriptionRight {
+    width: 40%;
+  }
+
+  .icon {
+    /* padding-top: 70px; */
   }
 }
