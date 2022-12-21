@@ -206,7 +206,7 @@ window.addEventListener("load", () => {
   });
   // contact form validation
   const email = document.getElementById("email");
-  document.querySelector("#submit").addEventListener("click", (e) => {
+  document.querySelector("#get-in-touch").addEventListener("click", (e) => {
     // if the email field is valid, we let the form submit
     if (email.validity.typeMismatch) {
       // submit form
