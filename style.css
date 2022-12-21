@@ -473,6 +473,13 @@ input {
   border: 0;
 }
 
+.error-msg {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  background: rgba(93, 7, 7, 0.466);
+}
+
 #get {
   margin-top: 5%;
 }
