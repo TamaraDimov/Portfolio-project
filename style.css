@@ -131,7 +131,7 @@ body {
 
 .introName {
   height: auto;
-  width: 95vw;
+  width: 100%;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -312,7 +312,6 @@ body {
 }
 
 .decription {
-  width: 90vw;
   height: auto;
   font-size: 15px;
 }
@@ -328,7 +327,7 @@ body {
   display: flex;
   justify-content: flex-start;
   gap: 5%;
-  width: 90vw;
+  width: 100%;
   height: auto;
   margin-bottom: 5%;
 }
@@ -564,7 +563,7 @@ input {
   align-content: center;
   z-index: 9;
   padding: 0 20px;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
 }
