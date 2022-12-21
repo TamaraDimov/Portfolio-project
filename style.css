@@ -212,14 +212,17 @@ body {
 
 /* Portfolio "Works" section */
 
-.works {
-  display: grid;
-  grid-template-rows: 4, 1fr;
+.wrapCards {
+  background-color: #f7f7f9;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
   row-gap: 5rem;
 }
 
-.wrapCards {
-  background-color: #f7f7f9;
+.imgBG {
+  width: 100%;
+  height: auto;
 }
 
 .portfolio2 {
@@ -233,75 +236,17 @@ body {
 }
 
 .mainContainer1 {
-  width: 100vw;
+  width: 90vw;
   height: auto;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding: 0;
-  background-image: url(img/Snapshoot\ Portfolio.png);
-  background-repeat: no-repeat;
-  background-size: 80% 40%;
-  background-position-x: center;
-  background-position-y: 15px;
+  margin-left: 24px;
   background-color: white;
-}
-
-.mainContainer2 {
-  width: 100vw;
-  height: auto;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding: 0;
-  background-image: url(img/Snapshoot\ Portfolio2.png);
-  background-repeat: no-repeat;
-  background-size: 80% 40%;
-  background-position-x: center;
-  background-position-y: 15px;
-  background-color: white;
-}
-
-.mainContainer3 {
-  width: 100vw;
-  height: auto;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding: 0;
-  background-image: url(img/Snapshoot\ Portfolio3.png);
-  background-repeat: no-repeat;
-  background-size: 80% 40%;
-  background-position-x: center;
-  background-position-y: 15px;
-  background-color: white;
-}
-
-.mainContainer4 {
-  width: 100vw;
-  height: auto;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding: 0;
-  background-image: url(img/Snapshoot\ Portfolio4.png);
-  background-repeat: no-repeat;
-  background-size: 80% 40%;
-  background-position-x: center;
-  background-position-y: 15px;
-  background-color: white;
-}
-
-.infoCard {
-  margin-top: 80%;
+  padding: 24px;
 }
 
 .name {
@@ -333,10 +278,11 @@ body {
 }
 
 .linkButtons {
+  width: 100%;
   display: flex;
   padding: 4px 0;
   justify-content: flex-start;
-  gap: 5%;
+  gap: 2%;
   margin-top: 5%;
   font-size: 15px;
   color: #6070ff;
@@ -353,7 +299,7 @@ body {
   border: 1px solid #123690;
   border-radius: 8px;
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 5px;
 }
 
 .more {
@@ -553,7 +499,9 @@ input {
   margin-top: 5%;
   margin-bottom: 2%;
 }
+
 /* popup window */
+
 .popup {
   width: 100%;
   height: 100%;
@@ -563,7 +511,7 @@ input {
   align-content: center;
   z-index: 9;
   padding: 0 20px;
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
 }
@@ -604,10 +552,9 @@ input {
   align-content: center;
   margin-bottom: 20px;
   column-gap: 10px;
-  font: size 15px;
+  font-size: 15px;
 }
 
-/*  */
 @media (min-width: 768px) {
   .blur {
     display: none;
@@ -701,7 +648,7 @@ input {
     padding-left: 7rem;
   }
 
-  .desktop1 {
+  .mainContainer1 {
     width: 90%;
     height: auto;
     border: 1px solid #dfe1e6;
@@ -710,47 +657,12 @@ input {
     justify-content: flex-start;
     flex-direction: row;
     align-content: center;
-    column-gap: 40px;
-    background-color: white;
-  }
-
-  .desktop2 {
-    width: 90%;
-    height: auto;
-    border: 1px solid #dfe1e6;
-    border-radius: 16px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    align-content: center;
     column-gap: 10px;
     background-color: white;
   }
 
-  .desktop3 {
-    width: 90%;
-    height: auto;
-    border: 1px solid #dfe1e6;
-    border-radius: 16px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-content: center;
-    column-gap: 40px;
-    background-color: white;
-  }
-
-  .desktop4 {
-    width: 90%;
-    height: auto;
-    border: 1px solid #dfe1e6;
-    border-radius: 16px;
-    display: flex;
+  .mainContainer1:nth-of-type(even) {
     flex-direction: row-reverse;
-    justify-content: flex-end;
-    align-content: center;
-    column-gap: 10px;
-    background-color: white;
   }
 
   .desktop-cards {
@@ -790,6 +702,9 @@ input {
     margin-left: 0;
     padding-right: 0;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
   }
 
   .linkButtons {
@@ -943,16 +858,11 @@ input {
     font-weight: bold;
   }
 
-  .decription {
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-  }
-
   .decriptionLeft {
     width: 60%;
     margin-top: 12px;
   }
+
   .decriptionRight {
     width: 40%;
   }
