@@ -68,6 +68,7 @@ After you're finished please remove all the comments and instructions!
 - **[figma template 1]**
 - **[HTML]**
 - **[CSS]**
+- **[JS]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- LIVE DEMO -->
@@ -133,7 +134,7 @@ Example commands:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Desktop version of the personal portfolio
+> Validate contact form
 
 - [ ] **[Desktop verson]**
 
