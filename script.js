@@ -17,3 +17,191 @@ menuArr.forEach((element) => {
     toggleNavbar();
   });
 });
+
+// Tools template
+const toolsTemplate = (toolsData) => {
+  let tools = '';
+  toolsData.forEach((tool) => {
+    tools += `
+    <button class="link">${tool}</button>
+    `;
+  });
+  return tools;
+};
+
+// portfolio template
+const workCard = (portfolioData) => {
+  let content = '';
+  portfolioData.forEach((workData) => {
+    content += `
+  <div class="mainContainer1 mobile-cards">
+  <div class="img">
+    <img class="imgBG" src="${
+  workData.image
+}" alt="Catchy look inspiring bionic forms"></img>
+  </div>
+  <div class="infoCard">
+    <section class="info">
+      <h2 class="name">${workData.name}</h2>
+      <ul class="info_job">
+        <li class="job">CANOPY</li>
+        <li>${workData.stack}</li>
+        <li>${workData.year}</li>
+      </ul>
+    </section>
+    <section class="decription">
+      <p>${workData.excerpt}</p>
+    </section>
+    <section class="linkButtons">${toolsTemplate(workData.tools)}</section>
+    <div class="seeMore">
+      <button class="more portfolioButton" data-id="${
+  workData.id
+}">See Project</button>
+    </div>
+  </div>
+  </div>`;
+  });
+  return content;
+};
+
+// modal pop up Template
+const modal = (workData) => `<section class="popup">
+  <div class="mobile-body">
+    <div class="popupCard">
+            <section class="info">
+              <div class="icon">
+              <h2 class="name">${workData.name}</h2>
+              <a href="#" class="iconX toggleNav">
+                <img src="img/Icon.png" alt="menu_exit_button" />
+              </a>
+            </div>
+              <ul class="info_job">
+                <li class="job">CANOPY</li>
+                <li>${workData.stack}</li>
+                <li>${workData.name}</li>
+              </ul>
+            </section>
+            <div class="img">
+              <img class="imgBG" src="${
+  workData.image
+}" alt="Image from the article for Tanner Christesen"></img>
+            </div>
+            <div class="decription">
+            <div class="decriptionLeft">
+              <p class="${workData.description}">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+              </p>
+            </div>
+            <div class="decriptionRight">
+            <section class="linkButtons">${toolsTemplate(
+    workData.tools,
+  )}</section>
+            <div class="seeMore btnPopupDiv">
+              <a href="${
+  workData.live_link
+}" class="more btnPopup">See live <img class="" src="img/live.png" alt="go live icon"></img></a>
+              <a href="${
+  workData.source_link
+}"class="more btnPopup">See Source <img class="" src="img/git.png" alt="go live icon"></img></a>
+            </div>
+          </div>
+        </div>
+  </div>
+  </div>
+</section>`;
+
+// WINDOWS ON LOAD
+window.addEventListener('load', () => {
+  const workData = [
+    {
+      id: '1',
+      name: 'Tonic',
+      image: 'img/d1.png',
+      stack: 'Back End Dev',
+      year: '2015',
+      excerpt:
+        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      tools: ['html', 'CSS', 'JavaScript'],
+      live_link: '#',
+      source_link: '#',
+    },
+    {
+      id: '2',
+      name: 'Multi-Post Stories',
+      image: 'img/d2.png',
+      stack: 'Full Stack Dev',
+      year: '2015',
+      excerpt:
+        'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      tools: ['html', 'Ruby on Rails', 'CSS', 'JavaScript'],
+      live_link: '#',
+      source_link: '#',
+    },
+    {
+      id: '3',
+      name: 'FACEBOOK 360',
+      image: 'img/d3.png',
+      stack: 'Full Stack Dev',
+      year: '2015',
+      excerpt:
+        "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      tools: ['html', 'Ruby on Rails', 'CSS', 'JavaScript'],
+      live_link: '#',
+      source_link: '#',
+    },
+    {
+      id: '4',
+      name: 'Uber Navigation',
+      image: 'img/d4.png',
+      stack: 'Lead Developer',
+      year: '2018',
+      excerpt:
+        'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      tools: ['html', 'Ruby on Rails', 'CSS', 'JavaScript'],
+      live_link: '#',
+      source_link: '#',
+    },
+  ];
+
+  // function to load portfolio sections dynamically when page loads
+  function loadPortfolio(callBack = () => null) {
+    const workSectionElemnt = document.querySelector('#portfolio');
+    workSectionElemnt.innerHTML = workCard(workData);
+    return callBack();
+  }
+  // function to show modal when portfolio see more button is clicked
+  function showModal(modalData, callBack = () => null) {
+    document.querySelector('.popupSection').innerHTML = modal(modalData);
+    return callBack();
+  }
+
+  // function to close modal when close button is clicked
+  function closeModal() {
+    document.querySelector('.icon').addEventListener('click', () => {
+      document.querySelector('.popupSection').innerHTML = '';
+    });
+  }
+
+  // load portfolio section
+  loadPortfolio(() => {
+    const portfolioButton = document.querySelectorAll('.portfolioButton');
+    Array.from(portfolioButton).forEach((element) => {
+      element.addEventListener('click', (e) => {
+        e.preventDefault();
+        const id = element.getAttribute('data-id');
+        const filter = workData.filter((data) => data.id === id);
+
+        // show modal
+        showModal(filter[0], closeModal);
+      });
+    });
+  });
+});
