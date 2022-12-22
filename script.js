@@ -208,9 +208,10 @@ window.addEventListener("load", () => {
   const email = document.getElementById("email");
   const name = document.getElementById("name");
   const text = document.getElementById("text");
-  name.value = localStorage.getItem("name")
-  email.value = localStorage.getItem("email")
-  text.value = localStorage.getItem("message")
+  const contactFormData = JSON.parse(localStorage.getItem("contactform"));
+  name.value = contactFormData.name;
+  email.value = contactFormData.email;
+  text.value = contactFormData.message;
   document.querySelector("#get-in-touch").addEventListener("click", (event) => {
     // if the email field is valid, we let the form submit
     if (email.validity.typeMismatch) {
@@ -226,33 +227,25 @@ window.addEventListener("load", () => {
       e.preventDefault();
       return;
     }
-    
+
     if (!name.validity.valid) {
       // submit form
       document.getElementById("error").innerHTML = "Invalid Name";
       e.preventDefault();
       return;
     }
-    
+
     if (!text.validity.valid) {
       // submit form
       document.getElementById("error").innerHTML = "Invalid Text";
       e.preventDefault();
       return;
     }
-    // show errors
-    // document.getElementById("contact-form").submit();
+
     const form = document.getElementById("contact-form");
     event.preventDefault();
     const myFormData = new FormData(form);
-    console.log(myFormData);
-
     const formDataObj = Object.fromEntries(myFormData.entries());
-    // formDataObj.name = myFormData.getAll("name");
-    console.log(formDataObj);
-    localStorage.setItem("name", formDataObj.name);
-    localStorage.setItem("email", formDataObj.email);
-    localStorage.setItem("message", formDataObj.message);
+    localStorage.setItem("contactform", JSON.stringify(formDataObj));
   });
-  
 });
