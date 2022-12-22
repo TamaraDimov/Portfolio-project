@@ -173,6 +173,7 @@
             </p>
           </div>
           <form
+            id="contact-form"
             class="inputButons"
             action="https://formspree.io/f/mnqredln"
             method="POST"
@@ -197,13 +198,15 @@
             />
             <br />
             <textarea
-              id="textarea"
+              id="text"
               maxlength="500"
               minlength="2"
               placeholder="Write your message here"
               required
             ></textarea>
-            <button class="more" id="get">Get It Touch</button>
+            <div id="error" class="error-msg"></div>
+            <br>
+            <button class="more" id="get-in-touch">Get It Touch</button>
           </form>
           <div class="line">
             <div></div>

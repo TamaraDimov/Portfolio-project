@@ -204,4 +204,37 @@ window.addEventListener('load', () => {
       });
     });
   });
+  // contact form validation
+  const email = document.getElementById('email');
+  document.querySelector('#get-in-touch').addEventListener('click', (e) => {
+    // if the email field is valid, we let the form submit
+    if (email.validity.typeMismatch) {
+      // submit form
+      document.getElementById('error').innerHTML = 'Invalid Email';
+      e.preventDefault();
+      return;
+    }
+    if (email.validity.patternMismatch) {
+      // submit form
+      document.getElementById('error').innerHTML = 'Please type for email with lowercase letters';
+      e.preventDefault();
+      return;
+    }
+    const name = document.getElementById('name');
+    if (!name.validity.valid) {
+      // submit form
+      document.getElementById('error').innerHTML = 'Invalid Name';
+      e.preventDefault();
+      return;
+    }
+    const text = document.getElementById('text');
+    if (!text.validity.valid) {
+      // submit form
+      document.getElementById('error').innerHTML = 'Invalid Text';
+      e.preventDefault();
+      return;
+    }
+    // show errors
+    document.getElementById('contact-form').submit();
+  });
 });
