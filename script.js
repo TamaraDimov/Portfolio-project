@@ -246,14 +246,12 @@ window.addEventListener('load', () => {
     const myFormData = new FormData(form);
     const formDataObj = Object.fromEntries(myFormData.entries());
     localStorage.setItem('contactform', JSON.stringify(formDataObj));
-    console.log(localStorage);
   }
 
-  email.addEventListener("keydown",storeData)
-  name.addEventListener("keydown",storeData)
-  text.addEventListener("keydown",storeData)
+  email.addEventListener('keydown', storeData);
+  name.addEventListener('keydown', storeData);
+  text.addEventListener('keydown', storeData);
 
-  
   const contactFormData = JSON.parse(
     localStorage.getItem('contactform') ?? '{}',
   );
