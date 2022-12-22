@@ -206,6 +206,9 @@ window.addEventListener('load', () => {
   });
   // contact form validation
   const email = document.getElementById('email');
+  const name = document.getElementById('name');
+  const text = document.getElementById('text');
+
   document.querySelector('#get-in-touch').addEventListener('click', (e) => {
     // if the email field is valid, we let the form submit
     if (email.validity.typeMismatch) {
@@ -220,21 +223,39 @@ window.addEventListener('load', () => {
       e.preventDefault();
       return;
     }
-    const name = document.getElementById('name');
+
     if (!name.validity.valid) {
       // submit form
       document.getElementById('error').innerHTML = 'Invalid Name';
       e.preventDefault();
       return;
     }
-    const text = document.getElementById('text');
+
     if (!text.validity.valid) {
       // submit form
       document.getElementById('error').innerHTML = 'Invalid Text';
       e.preventDefault();
       return;
     }
-    // show errors
+    // submit form
     document.getElementById('contact-form').submit();
   });
+
+  function storeData() {
+    const form = document.getElementById('contact-form');
+    const myFormData = new FormData(form);
+    const formDataObj = Object.fromEntries(myFormData.entries());
+    localStorage.setItem('contactform', JSON.stringify(formDataObj));
+  }
+
+  email.addEventListener('keydown', storeData);
+  name.addEventListener('keydown', storeData);
+  text.addEventListener('keydown', storeData);
+
+  const contactFormData = JSON.parse(
+    localStorage.getItem('contactform') ?? '{}',
+  );
+  name.value = contactFormData.name ?? '';
+  email.value = contactFormData.email ?? '';
+  text.value = contactFormData.message ?? '';
 });
