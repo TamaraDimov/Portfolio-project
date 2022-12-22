@@ -237,15 +237,23 @@ window.addEventListener('load', () => {
       e.preventDefault();
       return;
     }
-
-    const form = document.getElementById('contact-form');
-    const myFormData = new FormData(form);
-    const formDataObj = Object.fromEntries(myFormData.entries());
-    localStorage.setItem('contactform', JSON.stringify(formDataObj));
     // submit form
     document.getElementById('contact-form').submit();
   });
 
+  function storeData() {
+    const form = document.getElementById('contact-form');
+    const myFormData = new FormData(form);
+    const formDataObj = Object.fromEntries(myFormData.entries());
+    localStorage.setItem('contactform', JSON.stringify(formDataObj));
+    console.log(localStorage);
+  }
+
+  email.addEventListener("keydown",storeData)
+  name.addEventListener("keydown",storeData)
+  text.addEventListener("keydown",storeData)
+
+  
   const contactFormData = JSON.parse(
     localStorage.getItem('contactform') ?? '{}',
   );
