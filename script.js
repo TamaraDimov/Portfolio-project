@@ -208,11 +208,8 @@ window.addEventListener("load", () => {
   const email = document.getElementById("email");
   const name = document.getElementById("name");
   const text = document.getElementById("text");
-  const contactFormData = JSON.parse(localStorage.getItem("contactform"));
-  name.value = contactFormData.name;
-  email.value = contactFormData.email;
-  text.value = contactFormData.message;
-  document.querySelector("#get-in-touch").addEventListener("click", (event) => {
+
+  document.querySelector("#get-in-touch").addEventListener("click", () => {
     // if the email field is valid, we let the form submit
     if (email.validity.typeMismatch) {
       // submit form
@@ -243,9 +240,16 @@ window.addEventListener("load", () => {
     }
 
     const form = document.getElementById("contact-form");
-    event.preventDefault();
     const myFormData = new FormData(form);
     const formDataObj = Object.fromEntries(myFormData.entries());
     localStorage.setItem("contactform", JSON.stringify(formDataObj));
+    // submit form
+    document.getElementById('contact-form').submit();
+    
   });
+
+  const contactFormData = JSON.parse(localStorage.getItem("contactform") ?? '{}');
+  name.value = contactFormData.name ?? "";
+  email.value = contactFormData.email ?? "";
+  text.value = contactFormData.message ?? "";
 });
