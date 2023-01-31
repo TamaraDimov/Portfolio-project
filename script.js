@@ -37,8 +37,8 @@ const workCard = (portfolioData) => {
   <div class="mainContainer1 mobile-cards">
   <div class="img">
     <img class="imgBG" src="${
-  workData.image
-}" alt="Catchy look inspiring bionic forms"></img>
+      workData.image
+    }" alt="Catchy look inspiring bionic forms"></img>
   </div>
   <div class="infoCard">
     <section class="info">
@@ -55,8 +55,8 @@ const workCard = (portfolioData) => {
     <section class="linkButtons">${toolsTemplate(workData.tools)}</section>
     <div class="seeMore">
       <button class="more portfolioButton" data-id="${
-  workData.id
-}">See Project</button>
+        workData.id
+      }">See Project</button>
     </div>
   </div>
   </div>`;
@@ -83,8 +83,8 @@ const modal = (workData) => `<section class="popup">
             </section>
             <div class="img">
               <img class="imgBG" src="${
-  workData.image
-}" alt="Image from the article for Tanner Christesen"></img>
+                workData.image
+              }" alt="Image from the article for Tanner Christesen"></img>
             </div>
             <div class="decription">
             <div class="decriptionLeft">
@@ -94,15 +94,15 @@ const modal = (workData) => `<section class="popup">
             </div>
             <div class="decriptionRight">
             <section class="linkButtons">${toolsTemplate(
-    workData.tools,
-  )}</section>
+              workData.tools
+            )}</section>
             <div class="seeMore btnPopupDiv">
               <a href="${
-  workData.live_link
-}" class="more btnPopup">See live <img class="" src="img/live.png" alt="go live icon"></img></a>
+                workData.live_link
+              }" class="more btnPopup">See live <img class="" src="img/live.png" alt="go live icon"></img></a>
               <a href="${
-  workData.source_link
-}"class="more btnPopup">See Source <img class="" src="img/git.png" alt="go live icon"></img></a>
+                workData.source_link
+              }"class="more btnPopup">See Source <img class="" src="img/git.png" alt="go live icon"></img></a>
             </div>
           </div>
         </div>
@@ -115,14 +115,13 @@ window.addEventListener('load', () => {
   const workData = [
     {
       id: '1',
-      name: 'Tonic',
-      image: 'img/d1.png',
-      stack: 'Back End Dev',
-      year: '2015',
-      excerpt:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      name: 'Capstone project',
+      image: 'img/project1.png',
+      stack: 'Front End Dev',
+      year: '2022',
+      excerpt: 'Capstone project for the first modul completion in Microverse.',
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+        'Capstone project of Module 1 : NEW WAYS OF TECHNICAL DRAWING is a web page where you can log in and join the course for mechanical technical drawing.',
       tools: ['html', 'CSS', 'JavaScript'],
       live_link: '#',
       source_link: '#',
@@ -219,7 +218,8 @@ window.addEventListener('load', () => {
     }
     if (email.validity.patternMismatch) {
       // submit form
-      document.getElementById('error').innerHTML = 'Please type for email with lowercase letters';
+      document.getElementById('error').innerHTML =
+        'Please type for email with lowercase letters';
       e.preventDefault();
       return;
     }
@@ -253,7 +253,7 @@ window.addEventListener('load', () => {
   text.addEventListener('keydown', storeData);
 
   const contactFormData = JSON.parse(
-    localStorage.getItem('contactform') ?? '{}',
+    localStorage.getItem('contactform') ?? '{}'
   );
   name.value = contactFormData.name ?? '';
   email.value = contactFormData.email ?? '';
