@@ -89,8 +89,7 @@ const modal = (workData) => `<section class="popup">
             <div class="decription">
             <div class="decriptionLeft">
               <p class="${workData.description}">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
-              </p>
+              The Ruby on Rails capstone project Budget app is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.              </p>
             </div>
             <div class="decriptionRight">
             <section class="linkButtons">${toolsTemplate(
