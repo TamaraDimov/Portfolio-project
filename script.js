@@ -44,7 +44,7 @@ const workCard = (portfolioData) => {
     <section class="info">
       <h2 class="name">${workData.name}</h2>
       <ul class="info_job">
-        <li class="job">CANOPY</li>
+        <li class="job">Microverse</li>
         <li>${workData.stack}</li>
         <li>${workData.year}</li>
       </ul>
@@ -128,17 +128,17 @@ window.addEventListener('load', () => {
     },
     {
       id: '2',
-      name: 'Multi-Post Stories',
-      image: 'img/d2.png',
+      name: 'Budget App',
+      image: 'img/budget.png',
       stack: 'Full Stack Dev',
-      year: '2015',
+      year: '2023',
       excerpt:
-        'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+        'The Ruby on Rails capstone project Budget app is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-      tools: ['html', 'Ruby on Rails', 'CSS', 'JavaScript'],
-      live_link: '#',
-      source_link: '#',
+        'The Ruby on Rails capstone project Budget app is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+      tools: ['HTML', 'Ruby on Rails', 'CSS'],
+      live_link: 'https://rails-budget-e790cfd72770.herokuapp.com/',
+      source_link: 'https://github.com/TamaraDimov/Budget-app',
     },
     {
       id: '3',
